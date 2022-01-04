@@ -1,0 +1,851 @@
+#N canvas 678 80 1658 749 12;
+#X obj 43 331 soundfiler;
+#X floatatom 43 355 10 0 0 0 - - -;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array grainabstraction-1 748800 float 2;
+#X coords 0 1 748800 -1 205 140 1 0 0;
+#X restore 726 416 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array grains 3000 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 2999 -1 185 140 1 0 0;
+#X restore 945 54 graph;
+#X obj 43 381 s filesize;
+#N canvas 550 236 1178 648 grains 0;
+#X obj 524 97 phasor~;
+#X obj 505 133 *~;
+#X obj 506 162 snapshot~;
+#X msg 506 188 next \$1;
+#X obj 524 74 expr 44100 / $f1;
+#X text 566 189 next grain start position;
+#X text 536 132 phasor~ goes from 0 to the number;
+#X text 571 146 of samples of the sound file;
+#X msg 257 184 next \$1;
+#X obj 257 159 random;
+#X text 705 214 8 instances of the grainabstraction;
+#X text 644 75 Frequency of the original;
+#X text 686 88 playback rate in Hz;
+#X msg 35 185 next \$1;
+#X obj 35 160 random;
+#X obj 164 49 metro 100;
+#X obj 36 359 tabwrite~ grains;
+#X obj 504 48 r filesize;
+#X obj 74 91 r filesize;
+#X obj 164 90 t b b b;
+#X obj 359 357 outlet~;
+#X msg 248 47 \; pd dsp 1;
+#X obj 164 14 loadbang;
+#X obj 35 218 clone grainabstraction 2 1;
+#X obj 257 217 clone grainabstraction 4 2;
+#X obj 506 216 clone grainabstraction 8 3;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 25 0;
+#X connect 4 0 0 0;
+#X connect 8 0 24 0;
+#X connect 9 0 8 0;
+#X connect 13 0 23 0;
+#X connect 14 0 13 0;
+#X connect 15 0 2 0;
+#X connect 15 0 19 0;
+#X connect 17 0 4 0;
+#X connect 17 0 1 1;
+#X connect 18 0 14 1;
+#X connect 18 0 9 1;
+#X connect 19 0 16 0;
+#X connect 19 1 9 0;
+#X connect 19 2 14 0;
+#X connect 22 0 21 0;
+#X connect 22 0 15 0;
+#X connect 23 0 16 0;
+#X connect 23 0 20 0;
+#X connect 24 0 16 0;
+#X connect 24 0 20 0;
+#X connect 25 0 16 0;
+#X connect 25 0 20 0;
+#X restore 1188 179 pd grains;
+#X obj 1140 245 dac~;
+#X obj 628 37 loadbang;
+#X obj 1187 207 rev3~ 95 90;
+#X obj 1139 208 *~ 1;
+#X msg 628 60 \; Volume 0.5;
+#X text 48 27 GRANULAR SYNTH;
+#N canvas 201 90 1598 702 keycommand 0;
+#X obj 121 304 cnv 15 160 50 empty empty empty 20 8 0 14 -232576 -66577
+0;
+#X obj 754 336 line;
+#X msg 822 294 stop;
+#X obj 29 142 keyname;
+#X obj 124 134 tgl 20 0 empty empty empty 17 7 0 10 -232576 -1 -1 0
+1;
+#X symbolatom 124 160 10 0 0 0 - - -;
+#X floatatom 29 167 5 0 0 0 - - -;
+#X msg 319 258 0.2;
+#X msg 353 257 0.3;
+#X msg 391 257 0.4;
+#X msg 427 258 0.5;
+#X msg 463 259 0.6;
+#X msg 502 260 0.7;
+#X msg 543 260 0.8;
+#X msg 582 260 0.9;
+#X msg 617 260 1;
+#X text 122 113 KEYBOARD COMMANDS;
+#X text 120 204 >>> Press Return;
+#X text 122 215 Decrease grain duration;
+#X text 120 183 INSTRUCTIONS:;
+#X text 122 234 >>> Press BackSpace;
+#X text 121 248 Increase grain duration;
+#X floatatom 127 332 5 0 0 0 - - -;
+#X floatatom 127 307 5 0 3 0 - - -;
+#X obj 69 487 s grainduration;
+#X obj 39 458 s grainspeed;
+#X text 171 306 Grain speed;
+#X obj 430 374 s speed;
+#X obj 754 394 s duration;
+#X text 123 266 >>> Press 1 to 9;
+#X text 124 279 Play with grain speed;
+#X text 124 397 >>> Press Escape;
+#X text 170 330 Grain duration;
+#X obj 29 253 r speed;
+#X obj 17 291 r duration;
+#X text 151 135 Start/Stop;
+#X text 125 366 >>> Press Tab;
+#X text 125 380 Randomize windows;
+#X text 124 411 Reinitialize windows;
+#X obj 321 91 route list;
+#X obj 322 64 receive fromGUI;
+#X obj 321 116 route /b1 /b2 /b3 /b4 /b5 /b6 /b7 /b8 /b9 /myB1 /myB2
+;
+#X obj 670 199 sel 1 0;
+#X obj 736 200 sel 1 0;
+#X msg 675 293 8000 1000;
+#X msg 754 294 10 1000;
+#X connect 1 0 28 0;
+#X connect 2 0 1 0;
+#X connect 3 0 6 0;
+#X connect 3 1 5 0;
+#X connect 7 0 27 0;
+#X connect 8 0 27 0;
+#X connect 9 0 27 0;
+#X connect 10 0 27 0;
+#X connect 11 0 27 0;
+#X connect 12 0 27 0;
+#X connect 13 0 27 0;
+#X connect 14 0 27 0;
+#X connect 15 0 27 0;
+#X connect 22 0 24 0;
+#X connect 23 0 25 0;
+#X connect 33 0 23 0;
+#X connect 34 0 22 0;
+#X connect 39 0 41 0;
+#X connect 40 0 39 0;
+#X connect 41 0 7 0;
+#X connect 41 1 8 0;
+#X connect 41 2 9 0;
+#X connect 41 3 10 0;
+#X connect 41 4 11 0;
+#X connect 41 5 12 0;
+#X connect 41 6 13 0;
+#X connect 41 7 14 0;
+#X connect 41 8 15 0;
+#X connect 41 9 42 0;
+#X connect 41 10 43 0;
+#X connect 42 0 44 0;
+#X connect 42 1 2 0;
+#X connect 43 0 45 0;
+#X connect 43 1 2 0;
+#X connect 44 0 1 0;
+#X connect 45 0 1 0;
+#X coords 0 -1 1 1 205 340 2 100 100;
+#X restore 724 51 pd keycommand;
+#X obj 1139 56 vsl 15 136 0 1 0 0 empty Volume Volume 0 -9 0 10 -262144
+-258113 -258113 6750 1;
+#X text 1185 114 Grains subpatch contains 14 instances of grains which
+are instanciated by the clone object. 6 instances of the grains are
+randomly picked in the soundfile timeline and each grain is smooth
+with a hanning window function.;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array grainabstraction-2 656896 float 2;
+#X coords 0 1 656896 -1 205 140 1 0 0;
+#X restore 949 415 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array grainabstraction-3 549443 float 2;
+#X coords 0 1 549443 -1 205 140 1 0 0;
+#X restore 1171 415 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array window-1 2051 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 2050 -1 100 100 1 0 0;
+#X restore 725 572 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array window-2 2051 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 2050 -1 100 100 1 0 0;
+#X restore 950 573 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array window-3 2051 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 2050 -1 100 100 1 0 0;
+#X restore 1172 573 graph;
+#X text 947 331 There are 3 different clones object which instanciate
+several instances of grains. Here \, you can change the amplitude envelope
+of the grains by adding some sine \, sawtooth or square forms.;
+#N canvas 1213 28 671 925 envelopes 0;
+#X text 153 268 Sine envelope;
+#X text 153 348 Sawtooth envelope;
+#X text 153 442 Square envelope;
+#X text 153 539 Triangle envelope;
+#X obj 108 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 161 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 125 106 sine;
+#X text 127 123 saw;
+#X text 126 140 square;
+#X text 125 159 triangle;
+#X msg 155 291 \; window-2 sinesum 2048 1 \; window-2 normalize 1;
+#X msg 153 371 \; window-2 sinesum 2048 1 0.5 0.33 0.25 0.2 0.166667
+0.142857 0.125 0.111111 \; window-2 normalize 1;
+#X msg 154 466 \; window-2 sinesum 2048 1 0 0.333333 0 0.2 0 0.142857
+0 0.111111 \; window-2 normalize 1;
+#X msg 154 563 \; window-2 sinesum 2048 1 0 -0.111111 0 0.04 0 -0.0204082
+0 0.0123457 0 -0.00826446 0 \; window-2 normalize 1;
+#X msg 214 220 \; window-2 sinesum 2048 0;
+#X obj 108 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
+-1 -1;
+#X text 125 178 None;
+#X obj 26 42 random 5;
+#X obj 26 67 select 1 2 3 4 5;
+#X obj 26 17 r random;
+#X obj 222 147 r none;
+#X connect 4 0 12 0;
+#X connect 5 0 13 0;
+#X connect 6 0 14 0;
+#X connect 7 0 15 0;
+#X connect 17 0 16 0;
+#X connect 19 0 20 0;
+#X connect 20 0 17 0;
+#X connect 20 1 7 0;
+#X connect 20 2 6 0;
+#X connect 20 3 5 0;
+#X connect 20 4 4 0;
+#X connect 21 0 19 0;
+#X connect 22 0 16 0;
+#X coords 0 -1 1 1 100 100 2 100 100;
+#X restore 1054 573 pd envelopes;
+#N canvas 1213 28 671 925 envelopes 0;
+#X text 153 268 Sine envelope;
+#X text 153 348 Sawtooth envelope;
+#X text 153 442 Square envelope;
+#X text 153 539 Triangle envelope;
+#X obj 108 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 161 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 125 106 sine;
+#X text 127 123 saw;
+#X text 126 140 square;
+#X text 125 159 triangle;
+#X obj 108 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
+-1 -1;
+#X text 125 178 None;
+#X msg 214 220 \; window-1 sinesum 2048 0;
+#X msg 155 291 \; window-1 sinesum 2048 1 \; window-1 normalize 1;
+#X msg 153 371 \; window-1 sinesum 2048 1 0.5 0.33 0.25 0.2 0.166667
+0.142857 0.125 0.111111 \; window-1 normalize 1;
+#X msg 154 466 \; window-1 sinesum 2048 1 0 0.333333 0 0.2 0 0.142857
+0 0.111111 \; window-1 normalize 1;
+#X obj 26 42 random 5;
+#X obj 26 67 select 1 2 3 4 5;
+#X obj 26 17 r random;
+#X obj 222 147 r none;
+#X msg 154 563 \; window-1 sinesum 2048 1 0 -0.111111 0 0.04 0 -0.0204082
+0 0.0123457 0 -0.00826446 0 \; window-1 normalize 1;
+#X connect 4 0 15 0;
+#X connect 5 0 16 0;
+#X connect 6 0 17 0;
+#X connect 7 0 22 0;
+#X connect 12 0 14 0;
+#X connect 18 0 19 0;
+#X connect 19 0 12 0;
+#X connect 19 1 7 0;
+#X connect 19 2 6 0;
+#X connect 19 3 5 0;
+#X connect 19 4 4 0;
+#X connect 20 0 18 0;
+#X connect 21 0 14 0;
+#X coords 0 -1 1 1 100 100 2 100 100;
+#X restore 831 573 pd envelopes;
+#N canvas 1213 28 671 925 envelopes 0;
+#X text 153 268 Sine envelope;
+#X text 153 348 Sawtooth envelope;
+#X text 153 442 Square envelope;
+#X text 153 539 Triangle envelope;
+#X obj 108 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 108 161 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 125 106 sine;
+#X text 127 123 saw;
+#X text 126 140 square;
+#X text 125 159 triangle;
+#X obj 108 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
+-1 -1;
+#X text 125 178 None;
+#X msg 214 220 \; window-3 sinesum 2048 0;
+#X msg 155 292 \; window-3 sinesum 2048 1 \; window-3 normalize 1;
+#X msg 153 371 \; window-3 sinesum 2048 1 0.5 0.33 0.25 0.2 0.166667
+0.142857 0.125 0.111111 \; window-3 normalize 1;
+#X msg 154 466 \; window-3 sinesum 2048 1 0 0.333333 0 0.2 0 0.142857
+0 0.111111 \; window-3 normalize 1;
+#X msg 154 563 \; window-3 sinesum 2048 1 0 -0.111111 0 0.04 0 -0.0204082
+0 0.0123457 0 -0.00826446 0 \; window-3 normalize 1;
+#X obj 26 42 random 5;
+#X obj 26 67 select 1 2 3 4 5;
+#X obj 26 17 r random;
+#X obj 222 147 r none;
+#X connect 4 0 15 0;
+#X connect 5 0 16 0;
+#X connect 6 0 17 0;
+#X connect 7 0 18 0;
+#X connect 12 0 14 0;
+#X connect 19 0 20 0;
+#X connect 20 0 12 0;
+#X connect 20 1 7 0;
+#X connect 20 2 6 0;
+#X connect 20 3 5 0;
+#X connect 20 4 4 0;
+#X connect 21 0 19 0;
+#X connect 22 0 14 0;
+#X coords 0 -1 1 1 100 100 2 100 100;
+#X restore 1277 573 pd envelopes;
+#X obj 61 134 r sample0;
+#X obj 62 201 r sample1;
+#X obj 61 262 r sample2;
+#X msg 467 60 \; pd dsp 0;
+#X msg 541 60 \; pd dsp 1;
+#N canvas 45 27 818 738 record 0;
+#X obj 545 66 adc~;
+#X obj 545 106 *~ 1;
+#X obj 544 154 env~;
+#X obj 544 176 - 100;
+#X obj 293 142 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X floatatom 292 114 5 0 0 0 - - -;
+#X text 298 54 a = start / s = stop;
+#X obj 117 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 593 78 r gain;
+#X obj 429 119 s gain;
+#X obj 544 201 s VU;
+#X obj 426 89 r VU;
+#N canvas 755 88 450 408 sample-0 0;
+#X obj 109 307 writesf~;
+#X msg 89 196 start;
+#X msg 146 223 stop;
+#X obj 190 284 symbol;
+#X obj 190 308 s sample0;
+#X msg 122 283 open \$1;
+#X obj 229 196 makefilename sample0.wav;
+#X obj 89 170 del 300;
+#X obj 190 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 34 252 inlet~;
+#X obj 155 112 spigot;
+#X obj 124 26 r play;
+#X msg 124 51 play;
+#X obj 125 85 pack s s;
+#X obj 176 24 r stop;
+#X msg 176 52 stop;
+#X obj 155 138 sel play stop;
+#X obj 194 86 r grain0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 2 0 8 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
+#X connect 6 0 3 1;
+#X connect 7 0 1 0;
+#X connect 8 0 3 0;
+#X connect 9 0 0 0;
+#X connect 10 0 16 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 10 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 7 0;
+#X connect 16 0 6 0;
+#X connect 16 1 2 0;
+#X connect 17 0 10 1;
+#X restore 651 157 pd sample-0;
+#N canvas 245 81 485 427 sample-1 0;
+#X obj 109 307 writesf~;
+#X msg 89 196 start;
+#X msg 146 223 stop;
+#X obj 190 284 symbol;
+#X msg 122 283 open \$1;
+#X obj 89 170 del 300;
+#X obj 190 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 155 112 spigot;
+#X obj 34 252 inlet~;
+#X obj 194 86 r grain1;
+#X obj 229 196 makefilename sample1.wav;
+#X obj 190 308 s sample1;
+#X obj 124 26 r play;
+#X msg 124 51 play;
+#X obj 125 85 pack s s;
+#X obj 176 24 r stop;
+#X msg 176 52 stop;
+#X obj 155 138 sel play stop;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 11 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;
+#X connect 7 0 17 0;
+#X connect 8 0 0 0;
+#X connect 9 0 7 1;
+#X connect 10 0 4 0;
+#X connect 10 0 3 1;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 0 7 0;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 5 0;
+#X connect 17 0 10 0;
+#X connect 17 1 2 0;
+#X restore 652 183 pd sample-1;
+#X obj 8 228 s grain0;
+#X obj 117 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 8 248 s grain1;
+#N canvas 0 50 496 433 sample-2 0;
+#X obj 109 307 writesf~;
+#X msg 89 196 start;
+#X msg 146 223 stop;
+#X obj 190 284 symbol;
+#X msg 122 283 open \$1;
+#X obj 89 170 del 300;
+#X obj 190 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 34 252 inlet~;
+#X obj 229 196 makefilename sample2.wav;
+#X obj 190 308 s sample2;
+#X obj 155 112 spigot;
+#X obj 124 26 r play;
+#X msg 124 51 play;
+#X obj 125 85 pack s s;
+#X obj 176 24 r stop;
+#X msg 176 52 stop;
+#X obj 155 138 sel play stop;
+#X obj 194 86 r grain2;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 9 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;
+#X connect 7 0 0 0;
+#X connect 8 0 4 0;
+#X connect 8 0 3 1;
+#X connect 10 0 16 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 10 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 5 0;
+#X connect 16 0 8 0;
+#X connect 16 1 2 0;
+#X connect 17 0 10 1;
+#X restore 652 207 pd sample-2;
+#X obj 117 245 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 8 267 s grain2;
+#X text 255 114 Trim;
+#X text 118 157 >>> Press a to record;
+#X text 118 173 >>> Press s to stop;
+#X obj 117 276 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 117 294 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 117 312 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 141 273 load sample-1;
+#X text 142 293 load sample-2;
+#X text 141 312 load sample-3;
+#X obj 8 418 s file0;
+#X obj 9 488 s file1;
+#X obj 9 542 s file2;
+#X text 118 115 SAMPLE DESIGNER;
+#X text 140 205 arm sample-1;
+#X text 141 225 arm sample-2;
+#X text 140 244 arm sample-3;
+#X text 117 139 Record or load samples;
+#X msg 8 392 open crickets.wav;
+#X obj 280 406 receive fromGUI;
+#X obj 280 431 route list;
+#X obj 280 456 route /sample0 /sample1 /sample2 /sample3 /sample4 /sample5
+/myButtonplay /myButtonstop;
+#X obj 587 498 s play;
+#X obj 638 497 s stop;
+#X msg 9 464 open crickets1.wav;
+#X msg 10 515 open crickets2.wav;
+#X connect 0 0 1 0;
+#X connect 0 1 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 12 0;
+#X connect 1 0 17 0;
+#X connect 1 0 13 0;
+#X connect 2 0 3 0;
+#X connect 3 0 10 0;
+#X connect 5 0 9 0;
+#X connect 7 0 14 0;
+#X connect 8 0 1 1;
+#X connect 11 0 4 0;
+#X connect 15 0 16 0;
+#X connect 18 0 19 0;
+#X connect 23 0 37 0;
+#X connect 24 0 43 0;
+#X connect 25 0 44 0;
+#X connect 37 0 29 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 7 0;
+#X connect 40 1 15 0;
+#X connect 40 2 18 0;
+#X connect 40 3 23 0;
+#X connect 40 4 24 0;
+#X connect 40 5 25 0;
+#X connect 40 6 41 0;
+#X connect 40 7 42 0;
+#X connect 43 0 30 0;
+#X connect 44 0 31 0;
+#X coords 0 -1 1 1 265 240 2 100 100;
+#X restore 448 430 pd record;
+#X msg 61 162 read -resize \$1 grainabstraction-1 \; grainabstraction-1
+normalize;
+#X msg 62 224 read -resize \$1 grainabstraction-2 \; grainabstraction-2
+normalize;
+#X msg 61 286 read -resize \$1 grainabstraction-3 \; grainabstraction-3
+normalize;
+#X msg 1190 59 \; grains normalize;
+#X obj 135 135 r file0;
+#X obj 134 200 r file1;
+#X obj 132 262 r file2;
+#X text 47 49 This granular synth is based on three samples which can
+be either recorded or loaded allowing you to start creating granular
+variations based on the speed and duration of grains.;
+#X obj 1413 626 s random;
+#X text 1480 624 envelopes;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 5 0 9 0;
+#X connect 5 0 8 0;
+#X connect 7 0 10 0;
+#X connect 7 0 28 0;
+#X connect 8 0 6 0;
+#X connect 8 1 6 1;
+#X connect 9 0 6 0;
+#X connect 9 0 6 1;
+#X connect 13 0 9 1;
+#X connect 24 0 30 0;
+#X connect 25 0 31 0;
+#X connect 26 0 32 0;
+#X connect 30 0 0 0;
+#X connect 31 0 0 0;
+#X connect 32 0 0 0;
+#X connect 34 0 30 0;
+#X connect 35 0 31 0;
+#X connect 36 0 32 0;
